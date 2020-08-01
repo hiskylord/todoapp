@@ -1,38 +1,57 @@
+table {
+    width: 100%;
+}
+
+body {
+    background: rgb(185, 79, 63);
+    background: radial-gradient(circle, rgba(185, 79, 63, 1) 0%, rgba(187, 99, 67, 1) 13%, rgba(188, 107, 68, 1) 28%, rgba(197, 235, 90, 1) 100%);
+}
+
+nav {
+    background: rgb(185, 79, 63) !important;
+    background: radial-gradient(circle, rgba(185, 79, 63, 1) 0%, rgba(187, 99, 67, 1) 13%, rgba(235, 105, 43, 1) 81%, rgba(197, 235, 90, 1) 100%) !important;
+}
+
+.navbar-brand {
+    text-shadow: #282c34 2px 2px;
+    font-weight: bolder;
+}
+
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }

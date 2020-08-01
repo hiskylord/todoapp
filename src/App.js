@@ -15,7 +15,6 @@ export default function App() {
             data: JSON.parse(localStorage.getItem('local_data')),
             action: ACTION.RETRIVE
         })
-
     }, [])
 
     // const [state, setTodo] = useState(database)
@@ -42,21 +41,30 @@ export default function App() {
         const newdata = state.filter((todo => todo.id !== key))
         dispatch({ data: newdata, action: ACTION.DELETE })
     }
+
+
     return ( < >
         <
         Header / >
         <
-        table > < tr > < th > Activity < /th><th>Schedule</th > < th > Action < /th></tr > <
+        div className = 'container' >
+        <
+        table className = "table table-striped" > < tr > < th > Activity < /th><th>Schedule</th > < th > Action < /th></tr >
+        <
+        tbody > <
         Todo datas = { state }
         handleDelete = { handleDelete }
-        /></table >
-        <
+        /></tbody > < /table > <
         div > < form method = 'post'
-        onSubmit = { handleTodo } > < input name = 'title'
+        onSubmit = { handleTodo }
+        className = 'input-group form-control' > <
+        input name = 'title'
+        className = 'input-group-prepend col-sm-6 rounded'
         required / > < input name = 'schedule'
         type = 'date'
-        required / > < button type = 'submit' > Add < /button></form > < /div> <
-        p > { state.length }
-        activities left < /p></ >
+        required className = 'col-sm-4 rounded' / > < button type = 'submit'
+        className = 'btn btn-success rounded-pilled col-sm-2' > Add < /button></form > < /div> <
+        p className = 'alert alert-primary' > < span class = 'badge badge-success' > { state.length } < /span>
+        activities left Undone < /p></div > < / >
     )
 }
