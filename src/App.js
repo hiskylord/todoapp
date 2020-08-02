@@ -43,28 +43,52 @@ export default function App() {
     }
 
 
-    return ( < >
+    return ( <
+        >
         <
         Header / >
         <
-        div className = 'container' >
+        div className = "container" >
         <
-        table className = "table table-striped" > < tr > < th > Activity < /th><th>Schedule</th > < th > Action < /th></tr >
+        table className = "table table-striped" > { " " } <
+        tr > { " " } <
+        th > Activity < /th> <
+        th > Schedule < /th> <th> Action </th >
         <
-        tbody > <
+        /tr> <
+        tbody > { " " } <
         Todo datas = { state }
         handleDelete = { handleDelete }
-        /></tbody > < /table > <
-        div > < form method = 'post'
+        /> < /
+        tbody > { " " } <
+        /table>{" "} <
+        div > { " " } <
+        form method = "post"
         onSubmit = { handleTodo }
-        className = 'input-group form-control' > <
-        input name = 'title'
-        className = 'input-group-prepend col-sm-6 rounded'
-        required / > < input name = 'schedule'
-        type = 'date'
-        required className = 'col-sm-4 rounded' / > < button type = 'submit'
-        className = 'btn btn-success rounded-pilled col-sm-2' > Add < /button></form > < /div> <
-        p className = 'alert alert-primary' > < span class = 'badge badge-success' > { state.length } < /span>
-        activities left Undone < /p></div > < / >
-    )
+        className = "input-group form-control" > { " " } <
+        input name = "title"
+        className = "input-group-prepend col-sm-6 rounded"
+        required /
+        >
+        { " " } <
+        input name = "schedule"
+        type = "date"
+        required className = "col-sm-4 rounded" /
+        >
+        { " " } <
+        button type = "submit"
+        className = "btn btn-success rounded-pilled col-sm-2" > { " " }
+        Add { " " } <
+        /button> < /
+        form > <
+        br > < /br> <
+        br > < /br>{" "} < /
+        div > { " " } <
+        p className = "alert alert-primary" > { " " } <
+        span class = "badge badge-success" > { state.length } < /span>
+        activities left Undone { " " } <
+        /p> < /
+        div > { " " } <
+        />
+    );
 }
