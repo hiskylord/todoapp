@@ -12,6 +12,10 @@ nav {
     background: radial-gradient(circle, rgba(185, 79, 63, 1) 0%, rgba(187, 99, 67, 1) 13%, rgba(235, 105, 43, 1) 81%, rgba(197, 235, 90, 1) 100%) !important;
 }
 
+.spaced-down {
+    margin-top: 20vh;
+}
+
 .navbar-brand {
     text-shadow: #282c34 2px 2px;
     font-weight: bolder;
